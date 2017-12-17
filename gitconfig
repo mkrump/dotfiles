@@ -1,0 +1,30 @@
+[core]
+	editor = vim
+	autocrlf = input
+	excludesfile = /Users/mathewkrump/.gitignore
+[user]
+	name = Matt Krump
+	useconfigonly = true
+	email = mkrump@8thlight.com
+[push]
+	default = simple
+[alias]
+	st = status 
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	sh = diff-tree --no-commit-id --name-only -r
+	wip = !git add . && git commit -m 'WIP' 
+    am = commit -a --amend --no-edit 
+[pull]
+	rebase = preserve
+[status]
+	showUntrackedFiles = all
+[credential]
+	helper = osxkeychain
+    useHttpPath = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
