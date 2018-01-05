@@ -20,6 +20,9 @@ let g:jsx_ext_required = 0
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
 
+" Format JSON
+map <leader>jf <ESC>:%!python -m json.tool<CR>
+
 " " Specify a directory for plugins
 " " - For Neovim: ~/.local/share/nvim/plugged
 " " - Avoid using standard Vim directory names like 'plugin'
