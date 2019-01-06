@@ -2,10 +2,11 @@
 	editor = vim
 	autocrlf = input
 	excludesfile = /Users/mathewkrump/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
 	name = Matt Krump
 	useconfigonly = true
-	email = mkrump@8thlight.com
+	email = 1036969+mkrump@users.noreply.github.com
 [push]
 	default = simple
 [alias]
@@ -26,5 +27,17 @@
 [credential]
 	helper = osxkeychain
     useHttpPath = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
