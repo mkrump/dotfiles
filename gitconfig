@@ -5,8 +5,8 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
 	name = Matt Krump
-	useconfigonly = true
 	email = 1036969+mkrump@users.noreply.github.com
+	useconfigonly = true
 [push]
 	default = simple
 [alias]
